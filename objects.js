@@ -1,4 +1,4 @@
-var playlist = { travisScoot: "uber everywhr",
+const playlist = { travisScoot: "uber everywhr",
 quovo: "best man",
 tydolla: "drop top"
 }
@@ -8,7 +8,7 @@ function updatePlaylist(object, artist, song) {
   return object
 }
 
-function removeFromPlaylist(object, artistName) {
- return object.artistName
+function removeFromPlaylist(playlist, artistName) {
+ return delete playlist.artistName
  
 }
